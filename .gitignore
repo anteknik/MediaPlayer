@@ -1,0 +1,29 @@
+target
+videos
+node
+node_modules
+.idea
+*.iml
+.classpath
+.project
+.settings
+.tmp
+.merge_file*
+.sass-cache
+.DS_Store
+src/main/webapp/dist
+.gradle
+build
+/target/
+/Videos/
+
+# Netbeans Ignore
+nbproject
+build
+dist
+private
+
+# Maven
+target
+videos
+Videos
