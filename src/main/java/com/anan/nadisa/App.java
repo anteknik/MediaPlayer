@@ -53,3 +53,22 @@ public class App extends Application {
     mp.play();
   }
 }
+@Override
+  public void start(Stage primaryStage) {
+    String workingDir = System.getProperty("user.dir");
+    File f = new File(workingDir, "/Videos/test.flv");
+    
+    Media m = new Media(f.toURI().toString());
+    MediaPlayer mp = new MediaPlayer(m);
+    MediaView mv = new MediaView(mp);
+    
+    StackPane root = new StackPane();
+    root.getChildren().add(mv);
+    
+    primaryStage.setScene(new Scene(root, 960, 540));
+    primaryStage.setTitle("Video Player 1");
+    primaryStage.show();
+    
+    mp.play();
+  }
+}
